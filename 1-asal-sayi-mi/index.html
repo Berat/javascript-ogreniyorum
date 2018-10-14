@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Asal Sayı</title>
+</head>
+<body>
+    <input type="text" id="sayi" placeholder="Sayi girin">
+    <br><br>
+    <button onclick="hesapla();">Hesapla</button>
+    
+    <script>
+        function hesapla(){
+            var asalmi=0;
+            var sayi = document.getElementById("sayi").value;
+            for(var i=sayi;i>0;i--){
+                if(sayi%i==0){
+                    asalmi++;
+                }
+            }
+            if(asalmi==2){
+                window.alert("Asal");
+            }else{
+                window.alert("Asal degil");
+            }
+        }
+    </script>
+</body>
+</html>
